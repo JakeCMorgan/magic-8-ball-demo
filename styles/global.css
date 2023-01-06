@@ -48,11 +48,31 @@ p {
 }
 
 .image {
-    width: 400px;
+    width: 450px;
 }
 
 .fortune-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.answer {
+    position: relative;
+    bottom: 260px;
+    color: rgb(16, 162, 247);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.shape-left {
+    shape-outside: polygon(50% 100%, 0 0, 100% 0);
+    float: left;
+    border: solid 5px white;
+}
+
+.shape-right {
+    shape-outside: polygon(50% 100%, 0 0, 100% 0);
+    float: right;
+    border: solid 5px white;
 }

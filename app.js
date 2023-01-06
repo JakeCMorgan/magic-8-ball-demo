@@ -1,29 +1,29 @@
 /* Imports */
 
 /* Get DOM Elements */
-const submitBtn = document.getElementById('submit');
+const submitButton = document.getElementById('submit');
 const promptSection = document.getElementById('prompt');
 const fortuneSection = document.getElementById('fortune');
 const answerP = document.getElementById('answer');
-const resetBtn = document.getElementById('reset');
+const resetButton = document.getElementById('reset');
 /* State */
 
 /* Events */
-submitBtn.addEventListener('click', () => {
+submitButton.addEventListener('click', () => {
     // hide prompt
     // display the image
     toggleSections();
     // pick a random number between 0 and length of the answers array - 1
     const randomInt = Math.floor(Math.random() * answers.length);
-    //console.log(randomInt);
+    // console.log(randomInt);
     const randomChoice = answers[randomInt];
-    //console.log(randomChoice);
-    //console.log('answers[12]', answers[12]);
+    // console.log(randomChoice);
+    // console.log('answers[12]', answers[12]);
     // set the content of the answer p to the random choice
     answerP.textContent = randomChoice;
 });
 
-resetBtn.addEventListener('click', () => {
+resetButton.addEventListener('click', () => {
     // hide 8 ball and the answer
     // show prompt
     toggleSections();
