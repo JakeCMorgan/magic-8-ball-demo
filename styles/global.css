@@ -1,6 +1,6 @@
 :root {
     --background: rgb(224, 234, 247);
-    --header-background: rgb(254, 251, 245);
+    --header-background: rgb(3, 26, 65);
     --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
         'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
 }
@@ -23,6 +23,7 @@ header {
     gap: 10px;
 
     background-color: var(--header-background);
+    color: white;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
@@ -31,5 +32,70 @@ header .logo {
 }
 
 main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
+    background-image: url(../assets/galaxy-background.jpg);
+    color: white;
+}
+
+p {
+}
+
+.hide {
+    display: none;
+}
+
+.image {
+    width: 450px;
+}
+
+.fortune-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.answer {
+    position: relative;
+    text-align: justify;
+    z-index: 1;
+    bottom: 260px;
+    color: rgb(16, 162, 247);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.shape {
+    width: 50%;
+    height: 100%;
+}
+
+.left {
+    shape-outside: polygon(50% 100%, 0 0, 100% 0);
+    float: left;
+}
+
+.right {
+    shape-outside: polygon(50% 100%, 0 0, 100% 0);
+    float: right;
+}
+
+.triangle {
+    position: relative;
+    z-index: 0;
+    bottom: 366px;
+    left: 280px;
+    width: 170%;
+    color: transparent;
+}
+
+.reset {
+    position: relative;
+    bottom: 800px;
+}
+
+p {
 }
