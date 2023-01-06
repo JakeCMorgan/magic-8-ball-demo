@@ -52,6 +52,7 @@ p {
 }
 
 .fortune-wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,20 +60,42 @@ p {
 
 .answer {
     position: relative;
+    text-align: justify;
+    z-index: 1;
     bottom: 260px;
     color: rgb(16, 162, 247);
     font-size: 1rem;
     text-transform: uppercase;
 }
 
-.shape-left {
-    shape-outside: polygon(50% 100%, 0 0, 100% 0);
-    float: left;
-    border: solid 5px white;
+.shape {
+    width: 50%;
+    height: 100%;
 }
 
-.shape-right {
+.left {
+    shape-outside: polygon(50% 100%, 0 0, 100% 0);
+    float: left;
+}
+
+.right {
     shape-outside: polygon(50% 100%, 0 0, 100% 0);
     float: right;
-    border: solid 5px white;
+}
+
+.triangle {
+    position: relative;
+    z-index: 0;
+    bottom: 366px;
+    left: 280px;
+    width: 170%;
+    color: transparent;
+}
+
+.reset {
+    position: relative;
+    bottom: 800px;
+}
+
+p {
 }
